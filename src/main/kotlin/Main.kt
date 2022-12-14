@@ -28,4 +28,9 @@ fun main(args: Array<String>) {
         min = max
         max = i
     }
+
+    for (i in min + 1..max - 1) {
+        sum += a[i]
+    }
+    print(sum)
 }
