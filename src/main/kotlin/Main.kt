@@ -12,4 +12,20 @@ fun main(args: Array<String>) {
         print("${a[i]}, ")
     }
     println()
+
+    for (i in 1..12) {
+        if (a[i] < a[min]) {
+            min = i
+        } else if (a[i] > a[max]) {
+            max = i
+        }
+    }
+    println("${a[min]}, ${a[max]}")
+
+    if (min > max) {
+        var i = 1
+        i = min
+        min = max
+        max = i
+    }
 }
